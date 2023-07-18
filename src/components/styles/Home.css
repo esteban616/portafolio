@@ -1,0 +1,57 @@
+.home_card{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 60px;
+    position: relative;
+    overflow: hidden;
+    height: 90vh;
+}
+
+.home{
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.home__article{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    gap: 1em;
+    
+
+}
+
+.home__title{
+    font-size: 1.4rem;
+}
+.home__desc{
+    font-size: 0.8rem;
+    opacity: 0.6;
+}
+
+.home__icons{
+    display: flex;
+    gap: 0.8em;
+    font-size: 2rem;
+    color: var(--red_principal);
+}
+@media (min-width:600px) {
+    .home{
+        width: 100%px;
+        max-width: 800px;
+    }
+    .home__title{
+        font-size: 2rem;
+    }
+
+    .home__desc{
+        font-size: 1rem;
+    }
+    
+}
+

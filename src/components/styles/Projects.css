@@ -1,0 +1,106 @@
+.projects_container{
+    margin-top: 1em;
+    padding: 1.5em;
+    }
+.projects{
+    width: 100%;
+    max-width: 600px;
+    height: 80vh;
+    padding: 1em;
+    overflow-y: scroll;
+    background-color: #5e5d5d93;
+    border-radius: 1em;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+     
+    scrollbar-width: thin;
+    scrollbar-color: var(--red_principal) #f5f5f5;
+
+}
+.projects::-webkit-scrollbar{
+    width: 6px;
+}
+.projects::-webkit-scrollbar-thumb {
+    background-color: var(--red_principal); 
+    border-radius: 1em; 
+  }
+
+
+.projects__title{
+    text-align: center;
+    padding: 1em;
+}
+.projects__desc{
+    font-size: 0.9rem;
+    opacity: 0.6;
+    margin-bottom: 1em;
+}
+.projects__desc span{
+    color: white;
+    opacity: 2;
+    font-weight: bold;
+}
+.projects__info{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.projects__card{
+    background-color: rgb(71, 71, 71);
+    border-radius: 0.5em;
+    padding: 0.5em;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.projects__card h3 {
+    text-align: center;
+    color: white;
+}
+.projects__links{
+   display: flex;
+   flex-direction: column;
+}
+.projects__links :nth-child(2){
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.projects__card-img{
+    padding: 1em;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 0.5em;
+    overflow: hidden;
+    align-self: center;
+    transition: transform 0.5s ease;
+
+}
+.projects__card-img:hover{
+    transform: scale(1.05);
+}
+.projects__card-img a img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 0.5em;
+}
+
+@media (min-width:600px) {
+    .projects_container{
+        display: flex;
+        gap: 1em;
+        justify-content: space-evenly;
+        margin-top: 1.5em;
+    }
+    .projects{
+        align-self: flex-end;
+        height: 75vh;
+    }
+    .projects__title{
+        font-size: 2rem;
+        color: white;
+    }
+
+}
