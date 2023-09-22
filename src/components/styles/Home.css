@@ -1,57 +1,76 @@
-.home_card{
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 60px;
-    position: relative;
-    overflow: hidden;
-    height: 90vh;
+.home_card {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 60px;
+  position: relative;
+  overflow: hidden;
+  height: 90vh;
 }
 
-.home{
-    width: 100%;
-    max-width: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 90vh;
+.home {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
 }
 
-.home__article{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 2em;
-    gap: 1em;
-    
-
+.home__article {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  gap: 1em;
 }
 
-.home__title{
-    font-size: 1.4rem;
+.home__title {
+  font-size: 1.4rem;
 }
-.home__desc{
-    font-size: 0.8rem;
-    opacity: 0.6;
+.home__desc {
+  font-size: 0.8rem;
+  opacity: 0.6;
 }
 
-.home__icons{
-    display: flex;
-    gap: 0.8em;
+.home__icons {
+  display: flex;
+  gap: 0.8em;
+  font-size: 2rem;
+  color: var(--red_principal);
+}
+
+.home_btn {
+  cursor: pointer;
+  background-color: var(--red_principal);
+  color: black;
+  border-radius: 0.5em;
+  font-size: 1.2rem;
+  transition: filter 1s ease, transform 1s ease;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home_btn button {
+  background-color: var(--red_principal);
+  border: none;
+  font-weight: bold;
+}
+
+.home_btn:hover {
+  filter: brightness(1.2);
+  transform: scale(1.02);
+}
+@media (min-width: 600px) {
+  .home {
+    width: 100%px;
+    max-width: 800px;
+  }
+  .home__title {
     font-size: 2rem;
-    color: var(--red_principal);
-}
-@media (min-width:600px) {
-    .home{
-        width: 100%px;
-        max-width: 800px;
-    }
-    .home__title{
-        font-size: 2rem;
-    }
+  }
 
-    .home__desc{
-        font-size: 1rem;
-    }
-    
+  .home__desc {
+    font-size: 1rem;
+  }
 }
-
